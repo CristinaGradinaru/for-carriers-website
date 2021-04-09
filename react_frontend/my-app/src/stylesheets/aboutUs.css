@@ -1,0 +1,83 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat
+}
+
+
+.border-top {
+    border-top: 1px solid #EEEEEE !important;
+    margin-top: 20px;
+    padding-top: 15px
+}
+
+.card {
+    margin: 40px 0px;
+    padding: 40px 50px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2)
+}
+
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+    text-decoration: none;
+
+}
+
+
+.btn-blue {
+    border: none;
+    background-color: #673AB7;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 20px 0px;
+    border:none;
+    border-radius:1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-blue:hover {
+    background-color: #311B92;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+Link:visited, Link:active, Link:hover, Link:link{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .card {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .mob-text {
+        font-size: 13px
+    }
+
+    .pad-left {
+        padding-left: 20px
+    }
+}
+
+.container-about{
+    justify-self: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%;
+    justify-content: center;
+    /* display: flex; */
+}
