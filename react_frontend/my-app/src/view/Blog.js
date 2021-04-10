@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Post from "../component/Post";
+import "../stylesheets/home.css";
+
 
 export default class Home extends Component {
   constructor() {
@@ -16,7 +18,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <div >
         <div className="site-wrapper">
           <div className="site-wrapper-inner">
             <div className="cover-container">
@@ -34,7 +36,9 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="justify-content-center">
+        <h1 className="container-fluid m-5">BLOG</h1>
+        <hr className="container-blog"/>
+        <div className="col-md-10 offset-md-3">
           {this.state.posts.map((p) => (
             <Post getToken={this.props.getToken} key={p.id} post={p} />
           ))}

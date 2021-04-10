@@ -7,9 +7,29 @@ import 'font-awesome/less/font-awesome.less';
 export default class Contact extends Component {
     render() {
         return (
-                <div className="container-fluid container-contact">
+            <div>
+                  <div className="site-wrapper">
+                    <div className="site-wrapper-inner">
+                        <div className="cover-container">
+                        <div className="inner cover">
+                            <h1 className="cover-heading">Custom items for Carriers</h1>
+                            <p className="lead mt-4">
+                            We offer custom items for your team. Personal Protection
+                            Equipment, T-shirts, Hats, Hoodies, and custom stickers that
+                            comply with Federal Regulations.
+                            </p>
+                            <p className="lead">
+                            <a className="btn btn-lg button-cover" href="/aboutus">
+                                Learn more
+                            </a>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div className="container-fluid container-contact">
 
-                <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <h2 className="h1-responsive font-weight-bold text-center">Contact us</h2>
                 <p className="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                     24h.</p>
 
@@ -78,6 +98,7 @@ export default class Contact extends Component {
                             </li>
                         </ul>
                     </div>
+                </div>
                 </div>
                 </div>
 

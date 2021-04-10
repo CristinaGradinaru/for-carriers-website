@@ -52,7 +52,7 @@ export default class PostDetail extends Component {
                     </div>
                     <div className="card-footer">
                         <Link to="">
-                            <button className="btn btn-secondary float-end">Back to Home</button>
+                            <button className="btn btn-blue float-end">Back to Home</button>
                         </Link>
                     </div>
                 </div>

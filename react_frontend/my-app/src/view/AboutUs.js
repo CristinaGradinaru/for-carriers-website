@@ -14,7 +14,7 @@ export default class AboutUs extends Component {
                   We are operating for the trucking business for almost 10 years and made thousands of trucking company owners happy with our high quality products and fastest delivery.
                 </p>
                 <p className="lead">
-                  <a className="btn btn-lg" href="/products">
+                  <a className="btn btn-lg button-cover" href="/products">
                     Shop Here
                   </a>
                 </p>
@@ -23,7 +23,7 @@ export default class AboutUs extends Component {
           </div>
         </div>
         <div className="flex-column container-about">
-          <h1>About Us</h1>
+          <h1 className="mb-5">About Us</h1>
           <hr></hr>
 
           <h2>Our Mission</h2>
@@ -32,7 +32,7 @@ export default class AboutUs extends Component {
             Trucking Industry
           </h5>
           <p>
-            We are focused on our customers, their visibility, their needs and
+            We are focused on our customers, their visibility, their needs, and
             their time.
           </p>
           <br />

@@ -106,11 +106,11 @@ export default class Order extends Component {
     const sizes = this.state.sizes;
 
     return (
-      <div className="container col-sm-8 offset-sm-2">
+      <div className="col-md-8 offset-md-2 order-container">
         <h1 className="item_name">{p.name}</h1>
         <form onSubmit={(e) => this.createOrder(e, p.id)}>
           <h6 className="category">CATEGORY: {p.category}</h6>
-          <img src={p.image} alt="women tshirts"></img>
+          <img className="product-image"src={p.image} alt="women tshirts"></img>
           <p className="description">{p.description}</p>
           <p className="colors">Available in: {p.color} colors.</p>
           <br />
@@ -170,7 +170,7 @@ export default class Order extends Component {
               <div className="def-number-input number-input">
                 <button
                   onClick={(e) => this.decrease(e)}
-                  className="minus"
+                  className="-"
                 ></button>
                 <input
                   className="quantity"
@@ -185,7 +185,7 @@ export default class Order extends Component {
                 ></button>
               </div>
               <br />
-              <button type="submit" className="btn btn-outline-info">
+              <button type="submit" className="btn btn-blue">
                 Submit
               </button>
             </div>

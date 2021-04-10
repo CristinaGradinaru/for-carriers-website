@@ -12,14 +12,14 @@ export default class Login extends Component {
             return <Redirect to={this.props.redirect} />
         }
         return (
-            <div className="col-sm-6 offset-sm-3">
+            <div className="container-flex login-container">
                 <form onSubmit={(e) => this.props.login(e)}>
                     <h1>Login:</h1>
                     <input type="text" className="form-control" name="username" placeholder="Username" />
                     <br/>
                     <input type="password" className="form-control" name="password" placeholder="Password" />
                     <br/>
-                    <button type="submit" className="btn btn-outline-info">Submit</button>
+                    <button type="submit" className="btn btn-blue">Submit</button>
                 </form>
             </div>
         )

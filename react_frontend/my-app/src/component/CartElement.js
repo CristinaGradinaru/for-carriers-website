@@ -11,7 +11,7 @@ export default class CartElement extends Component {
 
             <div className="col-md-12 container-fluid">
             {this.props.order['completed']===false ? (               
-            <div className="container px-4 py-5 mx-auto">
+            <div className="container px-3 py-1 mx-auto">
 
             <div className="row d-flex justify-content-center border-top">
                 <div className="col-3">

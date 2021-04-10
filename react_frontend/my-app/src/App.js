@@ -78,7 +78,7 @@ export default class App extends Component {
     })
     let userDetails = await res.json();
     this.setState({
-      redirect: "/home",
+      redirect: "/",
       userDetails: userDetails,
       username:e.target.username.value,
       password:e.target.password.value,
@@ -126,7 +126,7 @@ export default class App extends Component {
         <Route exact path="/post/:id" render={({ match }) => <PostDetail  match={match} getToken={this.getToken} userDetails = {this.state.userDetails}/>} />
         <Route exact path="/login" render={() => <Login  redirect={this.state.redirect} login={this.login} getToken={this.getToken} userDetails = {this.state.userDetails}/>} />
         <Route exact path="/register" render={() => <Register />} />
-        <Route exact path="/galery" render={() => <Gallery userDetails = {this.state.userDetails}/>} />
+        <Route exact path="/gallery" render={() => <Gallery userDetails = {this.state.userDetails}/>} />
         <Route exact path="/myinfo/update" render={() => <UpdateMyInfo userDetails = {this.state.userDetails}/>} />
         <Route exact path="/createpost" render={() => <CreatePost  getToken={this.getToken} userDetails={this.userDetails}/>} />
         <Route exact path="/myinfo" render={() => <MyInfo  userDetails={this.state.userDetails} getToken={this.getToken}/>} />

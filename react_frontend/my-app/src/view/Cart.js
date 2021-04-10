@@ -60,7 +60,7 @@ checkout(e){
                     <div className="container empty-message">
                     <p>before proceeding to checkout you must add some orders to the shopping cart.</p>
                     <p>find our customizable products on our "PRODUCTS" page.</p>
-                    <button className="btn btn-blue">Return To Products </button>
+                    <a className="btn btn-blue" href="/products"> Return To Products </a>
                     </div>
                 </div>
             ):(

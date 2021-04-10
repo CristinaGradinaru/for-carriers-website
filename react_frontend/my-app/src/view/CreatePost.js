@@ -39,18 +39,22 @@ export default class CreatePost extends Component {
             return <Redirect to={this.state.redirect} />
         }
         return (
-            <div className="col-sm-8 offset-sm-2">
-                <h1> Share your thoughts here: </h1>
+            <div className="col-sm-8 offset-sm-2 mt-5">
                 <form onSubmit={(e) => this.createapost(e)}>
+                <div className="note mb-5">
+                                <p>Create a Post</p>
+                </div>
                     <input type="text" className="form-control" name="title" placeholder="Title" />
                     <br/>
                     <input type="text" className="form-control" name="image" placeholder="Image URL" />
                     <br/>
                     <textarea type="text" className="form-control" name="content" placeholder="Content" />
                     <br/>
-                    <button type="submit" className="btn btn-outline-info">Submit</button>
+                    <button type="submit" className="btn btn-blue">Submit</button>
                 </form>
-            </div>
+            
+        </div>
+
         )
     }
 }

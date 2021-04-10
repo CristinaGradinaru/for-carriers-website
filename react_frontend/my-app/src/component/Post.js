@@ -53,7 +53,7 @@ export default class Post extends Component {
                 <div className='faq-dropdown'>
                     <p>
                         <a className="dropdown-qs space-between" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
-                        <button className="btn btn-sm btn-outline-info d-inline m-3">Leave a Comment</button>
+                        <button className="btn-sm btn-secondary">Leave a Comment</button>
                         </a>
                     </p>
                     <div className="row">
